@@ -1,0 +1,49 @@
+<!-- What is map() in JavaScript?
+The map() method creates a new array by applying a given function to each element of the original array. It transforms each element according to the logic defined in the callback function without altering the original array. -->
+
+<script>
+    const numbers = [1, 2, 3, 4, 5]
+    const multipliedNumbers = numbers.map(num => (num * 2));
+    console.log(multipliedNumbers);
+
+    // const newArray = oldArray.map(funcNmae => (you can perform your own custom function))
+    // console.log(newArray); check it in the console
+    const fruits = [
+        { name: 'apple', color: 'red' },
+        { name: 'banana', color: 'yellow' },
+        { name: 'kiwi', color: 'green' },
+        { name: 'orange', color: 'orange' },
+        { name: 'pineapple', color: 'yellow' }
+    ];
+
+    const transformedFruits = fruits.map(fruit => ({
+        fruitName: fruit.name.toUpperCase(),
+        fruitColor: fruit.color.toUpperCase()
+    }));
+
+    console.log(transformedFruits);
+</script>
+
+<!-- What is filter() in JavaScript?
+The filter() method creates a new array containing only elements that satisfy a specified condition. It does not change the original array and is useful for selecting specific elements from an array based on certain criteria. -->
+
+<script>
+    const numbers2 = [1,2,3,4,5,6,7,8]
+    const filternumbers = numbers2.filter(num => num > 5)
+    console.log(filternumbers);
+
+    // Using filter to get fruits which are yellow in color
+const fruits2 = [
+    { name: 'apple', color: 'red' },
+    { name: 'banana', color: 'yellow' },
+    { name: 'kiwi', color: 'green' },
+    { name: 'orange', color: 'orange' },
+    { name: 'pineapple', color: 'yellow' }
+];
+
+const yellowFruit = fruits2.filter(fruits2 => fruits2.color == 'yellow');
+console.log(yellowFruit.length);
+console.log(yellowFruit);
+
+    
+</script>
