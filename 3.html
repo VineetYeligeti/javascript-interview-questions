@@ -1,2 +1,28 @@
 <!-- what is forEach() ?
 forEach() method iterates over array elements, executing a specified function once for each element in the array. It does not return a new array or alter the original array, making it useful for operations like logging or modifying elements in place. -->
+
+<script>
+    const numbers = [1, 2, 3, 4];
+
+numbers.forEach((number) => {
+    console.log(number * 2);
+});
+
+const names = ['john','carry', 'madhu', 'chotu', 'bheem'];
+names.forEach((name) =>{
+    console.log('This is my name ' + name);
+    
+})
+</script>
+
+<!-- what is map() ?
+map() method creates a new array by applying a specified function to each element of the original array. It returns a new array with the transformed values, leaving the original array unchanged, and is commonly used for data manipulation and transformation. -->
+<script>
+    const num = [1,2,3,4,5,6,7,8,9]
+    const outnumber = num.map((n)=>{
+        console.log(n+2);
+        return n + 2;
+    })
+    console.log(outnumber);
+    
+</script>
